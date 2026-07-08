@@ -1,0 +1,17 @@
+generator client {
+    provider = "prisma-client-js"
+}
+
+datasource db {
+    provider = "sqlite"
+    url = env("DATABASE_URL")
+}
+
+model Elemento {
+    id Int @id @default(autoincrement())
+    simbolo String @unique
+    nome String
+    massaAtomica Float
+
+    @@map("elementos")
+}

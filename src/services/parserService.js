@@ -1,4 +1,4 @@
-import {AppError} from './utils/AppError.js'
+import { AppError } from '../utils/AppError.js'
 
 export class parserService {
     constructor() {
@@ -55,8 +55,8 @@ export class parserService {
           }
 
         return {
-            reagentes: this._extraiMoleculas(partes[0]),
-            produtos: this._extraiMoleculas(partes[1])
+            reagentes: await this._extraiMoleculas(partes[0]),
+            produtos: await this._extraiMoleculas(partes[1])
         }
     }
 

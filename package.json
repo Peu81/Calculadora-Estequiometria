@@ -4,7 +4,7 @@
   "description": "Uma API RESTful desenvolvida em Node.js projetada para analisar, balancear e resolver cálculos estequiométricos passo a passo.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
   },
   "repository": {
     "type": "git",
@@ -13,7 +13,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/Peu81/Calculadora-Estequiometria/issues"
   },
@@ -23,6 +23,7 @@
     "express": "^5.2.1"
   },
   "devDependencies": {
+    "jest": "^30.4.2",
     "prisma": "^6.13.0"
   }
 }

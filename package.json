@@ -26,5 +26,8 @@
   "devDependencies": {
     "jest": "^30.4.2",
     "prisma": "^6.13.0"
+  },
+  "prisma": {
+    "seed": "node prisma/seed.js"
   }
 }

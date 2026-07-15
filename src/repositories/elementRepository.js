@@ -10,9 +10,10 @@ export class elementoRepository {
     };
 
     async buscaVariosSimbolos(simbolos) {
-        return await this.prisma.elemento.findMany({
+        const elementos = await this.prisma.elemento.findMany({
             where: {simbolo: {in: simbolos}}
         });
+        return elementos;
     };
 
     async listarTodos() {
